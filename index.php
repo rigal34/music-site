@@ -1,6 +1,7 @@
 <?php
 // Chemin vers ton dossier de musique
 $directory = '/9 To/dev/www/galleriederecherche/MUSIC';
+// Changement mineur pour redéploiement
 
 if (is_dir($directory)) {
     $files = scandir($directory);

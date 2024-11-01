@@ -1,37 +1,41 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #4a90e2;
-    color: white;
-    padding: 20px;
-    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem;
     text-align: center;
 }
 
-main {
-    padding: 20px;
-    text-align: center;
+.music-library {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #4a90e2;
-    color: white;
-    border: none;
+.music-library h2 {
+    text-align: center;
+    color: #333;
+}
+
+.track {
+    background-color: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-button:hover {
-    background-color: #357ab8;
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2rem;
 }

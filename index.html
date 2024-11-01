@@ -3,18 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music - Accès privé</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Music Site</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Plyr CSS -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur ma collection musicale privée</h1>
+        <h1>Bienvenue sur Music Site</h1>
+        <p>Accédez à vos morceaux favoris en toute simplicité</p>
     </header>
-    <main>
-        <p>Cliquez pour accéder à votre musique stockée en externe.</p>
-        <button onclick="location.href='ftp://ftpes://freebox@dog-man.freeboxos.fr:50046/'">
-            Accéder à la musique
-        </button>
-    </main>
+    
+    <section class="music-library">
+        <h2>Ma Collection de Musique</h2>
+        <div class="track">
+            <h3>Titre du morceau 1</h3>
+            <!-- Plyr audio player -->
+            <audio controls>
+                <source src="music/morceau1.mp3" type="audio/mp3">
+                Votre navigateur ne supporte pas l'élément audio.
+            </audio>
+        </div>
+        <div class="track">
+            <h3>Titre du morceau 2</h3>
+            <audio controls>
+                <source src="music/morceau2.mp3" type="audio/mp3">
+                Votre navigateur ne supporte pas l'élément audio.
+            </audio>
+        </div>
+        <!-- Ajoute plus de pistes ici -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bruno's Music Site</p>
+    </footer>
+
+    <!-- Plyr JS -->
+    <script src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
+    <script>
+        const players = Plyr.setup('audio');
+    </script>
 </body>
 </html>

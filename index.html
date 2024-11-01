@@ -3,45 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Site</title>
+    <title>Music Site - Version Pro</title>
     <link rel="stylesheet" href="style.css">
     <!-- Plyr CSS -->
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur Music Site</h1>
-        <p>Accédez à vos morceaux favoris en toute simplicité</p>
+        <h1>Music Library</h1>
+        <p>Explore and enjoy your favorite tunes</p>
     </header>
-    
+
     <section class="music-library">
-        <h2>Ma Collection de Musique</h2>
+        <h2>My Music Collection</h2>
         <div class="track">
-            <h3>Titre du morceau 1</h3>
-            <!-- Plyr audio player -->
-            <audio controls>
-                <source src="music/morceau1.mp3" type="audio/mp3">
-                Votre navigateur ne supporte pas l'élément audio.
+            <h3>Track Title 1</h3>
+            <audio class="player" controls>
+                <source src="music/track1.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
             </audio>
         </div>
         <div class="track">
-            <h3>Titre du morceau 2</h3>
-            <audio controls>
-                <source src="music/morceau2.mp3" type="audio/mp3">
-                Votre navigateur ne supporte pas l'élément audio.
+            <h3>Track Title 2</h3>
+            <audio class="player" controls>
+                <source src="music/track2.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
             </audio>
         </div>
-        <!-- Ajoute plus de pistes ici -->
+        <!-- More tracks can be added here -->
     </section>
 
     <footer>
-        <p>&copy; 2024 Bruno's Music Site</p>
+        <p>&copy; 2024 Music Library</p>
     </footer>
 
     <!-- Plyr JS -->
     <script src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
     <script>
-        const players = Plyr.setup('audio');
+        const players = Plyr.setup('.player', { controls: ['play', 'progress', 'volume', 'download'] });
     </script>
 </body>
 </html>
+
